@@ -1,0 +1,32 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <radialGradient id="sky" cx="50%" cy="42%" r="80%">
+      <stop offset="0" stop-color="#182b59"/>
+      <stop offset=".6" stop-color="#101e43"/>
+      <stop offset="1" stop-color="#09132f"/>
+    </radialGradient>
+    <radialGradient id="halo">
+      <stop offset="0" stop-color="#ffce60" stop-opacity=".30"/>
+      <stop offset=".35" stop-color="#ffd265" stop-opacity=".09"/>
+      <stop offset="1" stop-color="#ffd265" stop-opacity="0"/>
+    </radialGradient>
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation=".35" result="b"/>
+      <feFlood flood-color="#ffc85b"/>
+      <feComposite in2="b" operator="in"/>
+      <feMerge><feMergeNode/><feMergeNode in="SourceGraphic"/></feMerge>
+    </filter>
+    <!-- ゲーム内と同じ形の光（大きさ1あたり：腕2.5・くびれ0.35・芯0.55・光の輪5） -->
+    <g id="spark">
+      <circle r="5" fill="url(#halo)"/>
+      <path d="M0-2.5Q.35-.35 2.5 0Q.35 .35 0 2.5Q-.35 .35-2.5 0Q-.35-.35 0-2.5Z" fill="#ffe189" filter="url(#glow)"/>
+      <circle r=".55" fill="#fff1b9"/>
+    </g>
+  </defs>
+  <rect width="200" height="200" fill="url(#sky)"/>
+  <use href="#spark" transform="translate(100 92) scale(9)"/>
+  <use href="#spark" transform="translate(38 54) scale(2.6)" opacity=".6"/>
+  <use href="#spark" transform="translate(164 70) scale(3.4)" opacity=".75"/>
+  <use href="#spark" transform="translate(48 156) scale(2.8)" opacity=".55"/>
+  <use href="#spark" transform="translate(156 166) scale(2.2)" opacity=".4"/>
+</svg>

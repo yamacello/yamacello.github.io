@@ -4,54 +4,34 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>yamamoto games</title>
-<meta name="description" content="やまもと しょうのブラウザゲーム置き場">
+<meta name="description" content="やまもと しょうのブラウザゲーム">
 <meta name="theme-color" content="#101e43">
 <link rel="icon" href="favicon.svg">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Zen+Maru+Gothic:wght@500;700&display=swap" rel="stylesheet">
 <style>
-:root{color-scheme:dark;--bg:#101e43;--bg-deep:#09132f;--text:#edf0ff;--muted:#8d9ebf;--gold:#ffe8a5;--card:#ffffff0a;--line:#f6d58040}
-*{box-sizing:border-box}
+:root{color-scheme:dark;--bg:#101e43;--text:#edf0ff;--muted:#8d9ebf;--gold:#ffe8a5}
 html,body{margin:0;min-height:100%}
-body{font-family:"Zen Maru Gothic","Hiragino Maru Gothic ProN","Yu Gothic",sans-serif;font-weight:500;color:var(--text);background:radial-gradient(circle at 50% 30%,#182b59,var(--bg) 60%,var(--bg-deep));background-attachment:fixed;line-height:1.8}
-main{max-width:640px;margin:0 auto;padding:72px 16px 48px}
-header{text-align:center;margin-bottom:48px}
-h1{margin:0;font-size:clamp(30px,8vw,40px);font-weight:700;letter-spacing:.08em;color:var(--gold)}
-.lead{margin:.6rem 0 0;color:var(--muted);letter-spacing:.06em;font-size:14px}
-h2{font-size:14px;letter-spacing:.2em;color:var(--muted);font-weight:700;margin:0 0 14px}
-.games{list-style:none;margin:0;padding:0;display:grid;gap:14px}
-.game{display:block;padding:20px 22px;border:1px solid var(--line);border-radius:20px;background:var(--card);color:inherit;text-decoration:none;transition:background .2s,transform .15s}
-.game:hover{background:#ffe08c14;transform:translateY(-2px)}
-.game-title{font-size:20px;font-weight:700;color:var(--gold);letter-spacing:.05em}
-.game-desc{margin:.3rem 0 0;font-size:14px;color:#c7d5f0}
-footer{margin-top:56px;text-align:center;font-size:13px;color:var(--muted);letter-spacing:.06em}
-footer a{color:var(--gold)}
+body{background:var(--bg);color:var(--text);font-family:"Hiragino Maru Gothic ProN","Hiragino Sans","Yu Gothic",sans-serif;line-height:1.8}
+main{max-width:480px;margin:0 auto;padding:96px 16px 48px}
+h1{margin:0 0 48px;font-size:22px;font-weight:700;letter-spacing:.1em;color:var(--gold)}
+ul{list-style:none;margin:0;padding:0}
+li+li{margin-top:12px}
+a{color:var(--text);text-decoration:none}
+a:hover{color:var(--gold)}
+ul a{font-size:17px}
+footer{margin-top:64px;font-size:13px;color:var(--muted)}
+footer a{color:var(--muted);text-decoration:underline;text-underline-offset:3px}
 </style>
 </head>
 <body>
 <main>
-  <header>
-    <h1>yamamoto games</h1>
-    <p class="lead">ブラウザですぐ遊べる小さなゲームたち</p>
-  </header>
+  <h1>yamamoto games</h1>
 
-  <section>
-    <h2>GAMES</h2>
-    <ul class="games">
-      <!-- 新しいゲームを追加するときは、この <li> をコピーして上に足す -->
-      <li>
-        <a class="game" href="hoshi-no-matataki/">
-          <div class="game-title">数えよう！ 星のまたたき</div>
-          <p class="game-desc">光ったら＋を押して、またたきを数えよう。音あり推奨。</p>
-        </a>
-      </li>
-    </ul>
-  </section>
+  <!-- 新しいゲームを追加するときは <li> を1行足す -->
+  <ul>
+    <li><a href="hoshi-no-matataki/">数えよう！ 星のまたたき</a></li>
+  </ul>
 
-  <footer>
-    やまもと しょう <a href="https://x.com/moya_vc" target="_blank" rel="noopener">@moya_vc</a>
-  </footer>
+  <footer>やまもと しょう <a href="https://x.com/moya_vc" target="_blank" rel="noopener">@moya_vc</a></footer>
 </main>
 </body>
 </html>

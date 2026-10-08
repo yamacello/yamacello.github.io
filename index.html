@@ -14,10 +14,11 @@ body{background:var(--bg);color:var(--text);font-family:"Hiragino Mincho ProN","
 main{max-width:480px;margin:0 auto;padding:96px 16px 48px}
 h1{margin:0 0 48px;font-size:22px;font-weight:400;letter-spacing:.08em}
 ul{list-style:none;margin:0;padding:0}
-li+li{margin-top:12px}
+li+li{margin-top:20px}
 a{color:var(--text);text-decoration:none}
 a:hover{text-decoration:underline;text-underline-offset:4px}
-ul a{font-size:16px}
+ul a{display:flex;align-items:center;gap:16px;font-size:16px}
+ul img{width:72px;height:72px;border-radius:8px;flex:none;display:block}
 footer{margin-top:64px;font-size:13px;color:var(--muted)}
 footer a{color:var(--muted)}
 </style>
@@ -26,9 +27,9 @@ footer a{color:var(--muted)}
 <main>
   <h1>YamamotoGames</h1>
 
-  <!-- 新しいゲームを追加するときは <li> を1行足す -->
+  <!-- 新しいゲームを追加するときは <li> を1行足す（サムネは各ゲームのフォルダに thumb.svg などで置く） -->
   <ul>
-    <li><a href="hoshi-no-matataki/">数えよう！ 星のまたたき</a></li>
+    <li><a href="hoshi-no-matataki/"><img src="hoshi-no-matataki/thumb.svg" alt="" width="72" height="72">数えよう！ 星のまたたき</a></li>
   </ul>
 
   <footer>やまもと しょう <a href="https://x.com/moya_vc" target="_blank" rel="noopener">@moya_vc</a></footer>

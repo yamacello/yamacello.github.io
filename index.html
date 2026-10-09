@@ -17,7 +17,9 @@ ul{list-style:none;margin:0;padding:0}
 li+li{margin-top:20px}
 a{color:var(--text);text-decoration:none}
 a:hover{text-decoration:underline;text-underline-offset:4px}
-ul a{display:flex;align-items:center;gap:16px;font-size:16px}
+ul a,.soon{display:flex;align-items:center;gap:16px;font-size:16px}
+.soon{color:var(--muted);letter-spacing:.06em}
+.soon img{opacity:.35}
 ul img{width:72px;height:72px;border-radius:8px;flex:none;display:block}
 footer{margin-top:64px;font-size:13px;color:var(--muted)}
 footer a{color:var(--muted)}
@@ -30,7 +32,8 @@ footer a{color:var(--muted)}
   <!-- 新しいゲームを追加するときは <li> を1行足す（新しいものを上に。サムネは thumbs/ かゲームのフォルダに置く） -->
   <ul>
     <li><a href="https://teiten-kansoku.yamamotogames.com/"><img src="thumbs/teiten-kansoku.svg?v=2" alt="" width="72" height="72">定点観測</a></li>
-    <li><a href="hoshi-no-matataki/"><img src="hoshi-no-matataki/thumb.svg" alt="" width="72" height="72">数えよう！ 星のまたたき</a></li>
+    <!-- 公開するときは下の行を <li><a href="hoshi-no-matataki/"><img src="hoshi-no-matataki/thumb.svg" alt="" width="72" height="72">数えよう！ 星のまたたき</a></li> に戻す -->
+    <li class="soon"><img src="hoshi-no-matataki/thumb.svg" alt="" width="72" height="72">Coming soon</li>
   </ul>
 
   <footer>やまもと しょう <a href="https://x.com/moya_vc" target="_blank" rel="noopener">@moya_vc</a></footer>
